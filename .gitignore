@@ -1,1 +1,6 @@
 diskhub.toml
+
+.gitignore
+.gitattributes
+
+*.log
