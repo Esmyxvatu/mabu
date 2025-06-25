@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mabu</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div id="login">
+        <h1 id="title">Please login</h1>
+        <input id="username__" placeholder="Username" />
+        <button id="login_button">Login</button>
+    </div>
+
+    <script>
+        const usrIn         = $('#username__');
+        const loginButton   = $('#login_button');
+        const title         = $('#title');
+
+        const socket = io();
+
+        loginButton.click(() => {
+            if (usrIn.val().includes(' ')) {
+                title.text('Username cannot contain spaces');
+                title.addClass('text-red-500');
+
+                setTimeout(() => {
+                    title.text('Please login');
+                    title.removeClass('text-red-500');
+                }, 1500);
+
+                return;
+            }
+                socket.emit('login-attempt', usrIn.val());
+        });
+
+        socket.on('login', (data) => {
+            if (data.success) {
+                localStorage.setItem('username', usrIn.val());
+                location.href = '/';
+            } else {
+                title.text(data.message);
+                title.addClass('text-red-500');
+
+                setTimeout(() => {
+                    title.text('Please login');
+                    title.removeClass('text-red-500');
+                }, 1500);
+            }
+        });
+    </script>
+</body>
+
+</html>

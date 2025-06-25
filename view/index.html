@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mabu</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/lucide@latest" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <div id="mobile-nav">
+            <p>Connected as <b id="m-username" onclick="location.href = '/login'"></b></p>
+
+            <div>
+                <b id="m-people_online_number">2</b>
+                <i data-lucide="users" onclick="$('#m-people').toggleClass('hidden')"></i>
+                <i data-lucide="home" onclick="location.href = '/'"></i>
+            </div>
+        </div>
+        <div id="m-people" class="hidden">
+            <ul id="m-people_online"></ul>
+        </div>
+        <div id="chat"></div>
+        <div id="people">
+            <div>
+                <h2 onclick="location.href = '/'">Mabu</h2>
+                <p>Connected as <b id="username" onclick="location.href = '/login'"></b></p>
+                <p>Online : <b id="people_online_number">2</b></p>
+            </div>
+            <ul id="people_online"></ul>
+        </div>
+        <textarea id="message" placeholder="Enter your message here...."></textarea>
+
+        <script>
+            lucide.createIcons();
+
+            const chat = $('#chat');
+            const usernameText = $('#username');
+            const message = $('#message');
+            const peopleOnline = $('#people_online');
+            const peopleOnlineNumber = $('#people_online_number');
+            const socket = io();
+            const url = new URLSearchParams(window.location.search);
+            const code = url.get('c') || '';
+
+            function goToChat(people) {
+                let username = localStorage.getItem('username');
+                let names = [username, people];
+
+                names.sort();
+
+                location.href = `/?c=${names[0]}-${names[1]}`;
+            }
+
+            function updateChat(username, message) {
+                chat.append(`<p class="msg"><b onclick="goToChat('${username}')">${username} :</b> ${message}</p>`);
+            }
+
+            function updatePeopleOnline(people) {
+                peopleOnline.append(`<li class="online" onclick="goToChat('${people}')">${people}</li>`); 
+                $('#m-people_online').append(`<li class="online" onclick="goToChat('${people}')">${people}</li>`);
+            }
+
+            message.keypress((e) => {
+                if (e.which == 13 && !e.shiftKey) {
+                    e.preventDefault();
+                    const username = usernameText.text();
+                    const message = $('#message').val();
+                    $('#message').val('');
+
+                    socket.emit('message', {"username": username, "message": message, "location": code});
+                }
+            });
+
+            $('document').ready(() => {
+                if (localStorage.getItem('username') == null) {
+                    location.href = '/login';
+                }
+
+                if (code != '') {
+                    let names = code.split('-');
+                    if (names[0] != localStorage.getItem('username')) {
+                        $(document).attr("title", `Chat with ${names[0]} • Mabu`);
+                    } else {
+                        $(document).attr("title", `Chat with ${names[1]} • Mabu`);
+                    }
+
+                    if (!names.includes(localStorage.getItem('username'))) {
+                        location.href = '/';
+                    }
+                }
+
+                usernameText.text(localStorage.getItem('username'));
+                $('#m-username').text(localStorage.getItem('username'));
+                socket.emit('people', usernameText.text());
+            });
+
+            socket.on('message', (data) => {
+                if (data.location == code) {
+                    updateChat(data.username, data.message);
+                }
+            });
+
+            socket.on('startup', (data) => {
+                peopleOnlineNumber.text(data.connected);
+                $('#m-people_online_number').text(data.connected);
+                peopleOnline.empty();
+                Object.keys(data.peoples).forEach((key) => {if (data.peoples[key] != usernameText.text()) {updatePeopleOnline(data.peoples[key]);}});
+            });
+        </script>
+    </body>
+</html>

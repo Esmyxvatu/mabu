@@ -1,0 +1,138 @@
+Sun, 26 Jan 2025 19:40:27 GMT - INFO : Server started on port 3000
+Sun, 26 Jan 2025 19:40:45 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:40:55 GMT - INFO : ::ffff:127.0.0.1 is trying to login as mario
+Sun, 26 Jan 2025 19:40:55 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:40:55 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:40:56 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:40:56 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sun, 26 Jan 2025 19:41:18 GMT - INFO : Message received [object Object]
+Sun, 26 Jan 2025 19:41:20 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:21 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:21 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sun, 26 Jan 2025 19:41:40 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:41 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:41 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sun, 26 Jan 2025 19:41:43 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:43 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:47 GMT - INFO : ::ffff:127.0.0.1 is trying to login as hello
+Sun, 26 Jan 2025 19:41:47 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:47 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:48 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:41:48 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sun, 26 Jan 2025 19:42:04 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:42:38 GMT - INFO : New client connected ::1
+Sun, 26 Jan 2025 19:42:38 GMT - INFO : ::1 is connected as 
+Sun, 26 Jan 2025 19:42:38 GMT - INFO : New client connected ::1
+Sun, 26 Jan 2025 19:42:43 GMT - INFO : ::1 is trying to login as mario
+Sun, 26 Jan 2025 19:42:43 GMT - INFO : Login successful for ::1
+Sun, 26 Jan 2025 19:42:43 GMT - INFO : Client disconnected ::1
+Sun, 26 Jan 2025 19:42:44 GMT - INFO : New client connected ::1
+Sun, 26 Jan 2025 19:42:44 GMT - INFO : ::1 is connected as mario
+Sun, 26 Jan 2025 19:43:03 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:03 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sun, 26 Jan 2025 19:43:13 GMT - INFO : Message received [object Object]
+Sun, 26 Jan 2025 19:43:22 GMT - INFO : Client disconnected ::1
+Sun, 26 Jan 2025 19:43:22 GMT - INFO : New client connected ::1
+Sun, 26 Jan 2025 19:43:22 GMT - INFO : ::1 is connected as mario
+Sun, 26 Jan 2025 19:43:23 GMT - INFO : Client disconnected ::1
+Sun, 26 Jan 2025 19:43:32 GMT - INFO : Message received [object Object]
+Sun, 26 Jan 2025 19:43:34 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:34 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:34 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sun, 26 Jan 2025 19:43:36 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:36 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:36 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sun, 26 Jan 2025 19:43:37 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:37 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:37 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sun, 26 Jan 2025 19:43:39 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sun, 26 Jan 2025 19:43:41 GMT - INFO : Client disconnected ::1
+Sat, 22 Feb 2025 08:35:53 GMT - INFO : Server started on port 3000
+Sat, 22 Feb 2025 08:36:03 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:03 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:36:07 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:36:11 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:36:13 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:13 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:22 GMT - INFO : ::ffff:127.0.0.1 is trying to login as mario
+Sat, 22 Feb 2025 08:36:22 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:22 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:22 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:36:22 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sat, 22 Feb 2025 08:40:27 GMT - INFO : Server started on port 3000
+Sat, 22 Feb 2025 08:40:28 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:40:28 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sat, 22 Feb 2025 08:40:31 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:40:38 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:40:39 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:40:39 GMT - INFO : ::ffff:127.0.0.1 is connected as mario
+Sat, 22 Feb 2025 08:40:41 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:40:41 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:10 GMT - INFO : New client connected ::1
+Sat, 22 Feb 2025 08:41:10 GMT - INFO : ::1 is connected as mario
+Sat, 22 Feb 2025 08:41:12 GMT - INFO : Client disconnected ::1
+Sat, 22 Feb 2025 08:41:13 GMT - INFO : New client connected ::1
+Sat, 22 Feb 2025 08:41:13 GMT - INFO : ::1 is connected as mario
+Sat, 22 Feb 2025 08:41:34 GMT - INFO : ::ffff:127.0.0.1 is trying to login as 
+Sat, 22 Feb 2025 08:41:34 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:34 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:34 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:34 GMT - INFO : ::ffff:127.0.0.1 is connected as 
+Sat, 22 Feb 2025 08:41:36 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:36 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:42 GMT - INFO : ::ffff:127.0.0.1 is trying to login as hello
+Sat, 22 Feb 2025 08:41:42 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:42 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:42 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:42 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:41:48 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:49 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:49 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:41:51 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:51 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:51 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:41:57 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:57 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:57 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:41:59 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:59 GMT - INFO : New client connected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:41:59 GMT - INFO : ::ffff:127.0.0.1 is connected as hello
+Sat, 22 Feb 2025 08:42:31 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:43:01 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:43:10 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:43:18 GMT - INFO : New client connected ::1
+Sat, 22 Feb 2025 08:43:18 GMT - INFO : Client disconnected ::1
+Sat, 22 Feb 2025 08:43:26 GMT - INFO : ::1 is trying to login as ukulele
+Sat, 22 Feb 2025 08:43:26 GMT - INFO : Login successful for ::1
+Sat, 22 Feb 2025 08:43:26 GMT - INFO : Client disconnected ::1
+Sat, 22 Feb 2025 08:43:26 GMT - INFO : New client connected ::1
+Sat, 22 Feb 2025 08:43:26 GMT - INFO : ::1 is connected as ukulele
+Sat, 22 Feb 2025 08:43:33 GMT - INFO : Message received [object Object]
+Sat, 22 Feb 2025 08:43:37 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Sat, 22 Feb 2025 08:43:39 GMT - INFO : Client disconnected ::1
+Thu, 15 May 2025 18:47:11 GMT - INFO : Server started on port 3000
+Thu, 15 May 2025 18:48:38 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:48:46 GMT - INFO : ::ffff:127.0.0.1 is trying to login as Esmyxvatu
+Thu, 15 May 2025 18:48:46 GMT - INFO : Login successful for ::ffff:127.0.0.1
+Thu, 15 May 2025 18:48:46 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:48:46 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:48:46 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:48:56 GMT - INFO : Message received [object Object]
+Thu, 15 May 2025 18:50:18 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:50:19 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:50:19 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:50:57 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:50:57 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:50:57 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:51:01 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:01 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:01 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:51:09 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:09 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:09 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:51:27 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:28 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:28 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
+Thu, 15 May 2025 18:51:29 GMT - INFO : Client disconnected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:29 GMT - INFO : New client connected ::ffff:127.0.0.1
+Thu, 15 May 2025 18:51:29 GMT - INFO : ::ffff:127.0.0.1 is connected as Esmyxvatu
